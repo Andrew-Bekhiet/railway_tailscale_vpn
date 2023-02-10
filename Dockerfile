@@ -22,4 +22,5 @@ COPY --from=tailscale /app/tailscale /app/tailscale
 RUN mkdir -p /var/run/tailscale /var/cache/tailscale /var/lib/tailscale
 
 # Run on container startup.
-CMD ["/app/start.sh"]
+CMD /app/tailscaled --state=/var/lib/tailscale/tailscaled.state --socket=/var/run/tailscale/tailscaled.sock &
+CMD /app/tailscale up --authkey=${TAILSCALE_AUTHKEY} --hostname=railway-app --advertise-exit-node
