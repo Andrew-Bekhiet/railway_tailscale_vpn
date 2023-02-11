@@ -5,3 +5,5 @@
 Host personal VPN on Railway using Tailscale
 
 Click on the deploy button, then [generate tailscale auth key](https://login.tailscale.com/admin/settings/keys) and paste it in the TAILSCALE_AUTHKEY in railway environment
+
+Make sure to use the server as an exit node in tailscale dashboard and use it as exit node on the client device
