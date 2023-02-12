@@ -5,3 +5,4 @@ until /app/tailscale up --authkey=${TAILSCALE_AUTHKEY} --hostname=railway-app --
 do
     sleep 0.1
 done
+sleep 
