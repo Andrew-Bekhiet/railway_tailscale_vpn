@@ -26,7 +26,19 @@ Host personal VPN on Railway using Tailscale
 
 6. Deploy!
 
-7. Go to your tailscale machines and approve railway-app as an exit node and you're done!
+7. Go to your tailscale machines and approve railway-app as an exit node
+
+    ![approve_exit_node.png](./readme-screenshots/approve_exit_node.png)
+
+8. Disable key expiry for the machine you just deployed
+
+    ![disable_key_expiry.png](./readme-screenshots/disable_key_expiry.png)
+
+9. Use this command to connect to your VPN
+
+    ```sh
+    tailscale up --exit-node railway-app # or replace railway-app with your hostname
+    ```
 
 ## More Info
 
