@@ -6,6 +6,8 @@ Host personal VPN on Railway using Tailscale
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/uIBpGp?referralCode=KgmRt8)
 
+## Required Environment Variables
+${TAILSCALE_AUTHKEY}
 ## How to setup
 
 1. To get started, you should create an account on [tailscale](https://tailscale.com), if you already have an account skip to next step
