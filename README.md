@@ -10,6 +10,7 @@ Host personal VPN on Railway using Tailscale
 ```sh
 ${TAILSCALE_AUTHKEY}
 ${TAILSCALE_HOSTNAME}
+${TAILSCALE_ADDITIONAL_ARGS}
 ```
 ## How to setup
 
