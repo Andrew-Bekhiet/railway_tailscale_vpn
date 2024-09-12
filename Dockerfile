@@ -6,7 +6,7 @@ WORKDIR /tailscale.d
 COPY start.sh /tailscale.d/start.sh
 
 ENV TAILSCALE_VERSION "latest"
-ENV TAILSCALE_HOSTNAME "railway-app"
+ENV TAILSCALE_HOSTNAME "render-app"
 ENV TAILSCALE_ADDITIONAL_ARGS ""
 
 RUN wget https://pkgs.tailscale.com/stable/tailscale_${TAILSCALE_VERSION}_amd64.tgz && \
